@@ -1,0 +1,55 @@
+normal insert visual command
+
+hjkl left down up right
+w forward a word
+b back a word
+
+:w<Enter> save
+:wq<Enter> quit
+
+COMMAND COUNT MOTION
+
+d is the delete motion
+dd deletes a line 
+
+u is undo
+<C-r> is redo
+
+d can be used with motions
+for example 
+d3j can delete current line + 3 lines below
+
+press i to go into insert mode behind the cursor
+press a to go into insert mode ahead of the cursor
+press Esc, <C-[>, <C-c> to leave
+
+v to go into visual (select) mode
+shift v to go into visual line mode
+y is yank
+yy yanks a line
+p pastes a line
+you can paste over a selection in visual 
+
+when you delete it also goes into your paste buffer
+
+### Horizontal 
+
+_ goes to beginning 
+
+$ goes to end
+
+0 goes to first whitespace
+
+f<Character> finds character forward
+F<Character> finds character backward
+
+t<Character> finds character forward and goes to the character before it
+T<Character> finds character backward and goes to the character after it
+
+; and , repeat these actions, comma goes backwards semicolon goes forwardk
+
+I goes to beginning of line in insert mode
+A goes to end of line in insert mode
+
+o will make a new line below and go into insert mode
+O will make a new line above and go into insert mode
